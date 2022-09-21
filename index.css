@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster&family=Ms+Madi&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+/*Background*/
+.cabecalho {
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    background-image: url(images/aboutmebg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100%;
+    background-size: cover;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*Edição do Cabeçalho*/
+
+/*Edição da Estrutura (body)*/
+
+section {
+    padding: 70px 17%;
+}
+
+.index__container{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    min-height: 70vh;
+    
+} 
+
+.comovai h1 {
+    font-family: 'Ms Madi', cursive;
+    font-size: 450%;
+    
+}
+
+.comovai p {
+    margin: 1rem 0 2rem;
+    font-size: 150%;
+    font-family: 'Barlow Condensed', sans-serif;
+
+}
+
+/*Imagem do Texto*/
+
+.teste {
+    display: flex;
+}
+
+.meucard {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/*Rodapé*/
+
+.rodape__container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+
+/*media query*/
+
+#icone-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1140px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    #icone-menu {
+        display: initial;
+    }
+
+    header .menu {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #f3c5bf;
+        transition: .3s;
+        width: 100%;
+    }
+
+    header .menu.active {
+        top: 60px;
+    }
+
+    .menu a {
+        padding: 1.5rem;
+        display: block;
+    }  }
+
+    @media (max-width: 720px) {
+
+        .index__container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 575px) {
+        section {
+            padding: 50px 7%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            overflow-y: initial;
+        } 
+    }
+
+    @media (max-width: 1366px) {
+        body {
+            overflow-y: initial;
+
+        }
+
+    }

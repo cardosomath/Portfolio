@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster&family=Ms+Madi&display=swap');
+/**************************************Hobbies**************************************/
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ 
+/*Background*/
+html {
+    background-image: url(images/contactmebg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100%;
+    background-size: cover;
+}
+/* Correção de espaço*/
+section {
+    padding: 100px 17%;
+}
+/* Camuflagem de barra de rolagem horizontal*/
+body {
+    overflow-x: hidden;
+}
+
+/*
+.cabecalho {
+    width: 400%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Contato caixas de msg*/
+.contato {
+    background: var(--text-color);
+    padding: 70px 0;
+    text-align: center;
+    width: 40%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+/* Contato título */
+.contato h2 {
+    font-size: 3rem;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+    font-family: 'Ms Madi', cursive;
+}
+/* Organização do espaçamento de texto/box*/
+.contatorganizado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-contato {
+    margin-bottom: 20px;
+    margin-top: 10px;   
+    width: 35%;
+    height: 30px;   
+    border: none;
+    border-radius: 0.5rem;
+    outline-color: #ec8e82; 
+    padding: 10px;
+}
+
+.text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    resize: none;
+    width: 70%;
+    border-radius: 0.5rem;
+    padding: 10px;
+    outline-color: #ec8e82;
+}
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    background: #57827b;
+    color: #FFF6F6;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+label {
+    font-size: 150%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+#mensagem {
+    font-size: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*Rodapé*/
+
+.rodape__container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+
+
+/*media query*/
+
+#icone-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1140px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    #icone-menu {
+        display: initial;
+    }
+
+    header .menu {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #f3c5bf;
+        transition: .3s;
+        width: 100%;
+    }
+
+    header .menu.active {
+        top: 60px;
+    }
+
+    .menu a {
+        padding: 1.5rem;
+        display: block;
+    }  
+
+    body {
+        overflow-y: initial;
+    }
+
+    .input-contato {
+        width: 50%;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+    @media (max-width: 720px) {
+
+        body {
+            overflow-y: initial;
+        }
+
+        .input-contato {
+            width: 50%;
+        }
+    
+        .text {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        section {
+            padding: 50px 7%;
+        }
+
+        body {
+            overflow-y: initial;
+        }
+
+        .input-contato {
+            width: 100%;
+        }
+    
+        .text {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            overflow-y: initial;
+        } 
+    
+        .input-contato {
+            width: 100%;
+        }
+    
+        .text {
+            width: 100%;
+        }
+    }

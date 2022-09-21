@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class='bx bx-menu' id="icone-menu"></div>
+        <nav class="cabecalho__container">
+            <ul class="menu">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="about.html" target="_blank">Sobre</a></li>
+                <li><a href="hobbies.html" target="">Hobbies</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <form class="contatorganizado">
+				<label for="nomesobrenome">Nome</label>
+				<input type="text" id="nomesobrenome" class="input-contato" required>
+
+				<label for="email">E-mail</label>
+				<input type="email" id="email" class="input-contato">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-contato">
+
+                <label for="mensagem">Deixe sua mensagem aqui:</label>
+                <textarea cols="70" rows="10" id="mensagem" class="text" required></textarea>
+                
+                <input type="submit" value="Enviar" class="btn">
+         </form>
+         
+     </section>
+    
+     <section class="rodape__container">
+        <footer> 
+            <p>Copyright&copy;</p>
+            <p>20 de Setembro de 2022</p>
+            <p>Feito por Matheus Cardoso</p>
+            <p>E-mail: programatheus7@gmail.com</p>
+        </footer>
+    </section>
+
+
+    <script src='menuResponsivo.js'></script>
+</body>
+</html>
